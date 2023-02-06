@@ -1,7 +1,14 @@
 create table if not exists git_assignment(
 
 id      int auto_increment primary key
-2)   NULL
+
+,accountID  int         NOT NULL
+
+,ownerName  varchar(255) NOT NULL
+
+,joinDate   date        NOT NULL
+
+,balance decimal(10,2)   NULL
 
 ,active boolean     NOT NULL
 
